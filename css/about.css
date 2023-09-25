@@ -1,0 +1,47 @@
+.aboutUs .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+.aboutUs .grid div:first-child {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.aboutUs nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+.aboutUs a:hover {
+    font-weight: bold;
+}
+
+div.hide {
+    display: none;
+}
+
+/* Media Query - Tablet and under */
+@media screen and (max-width: 942px) {
+    #current-page {
+        border-bottom: none;
+        text-decoration: underline;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Query - Mobile */
+@media screen and (max-width: 420px) {
+    .grid,
+    .aboutUs .grid {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
+}

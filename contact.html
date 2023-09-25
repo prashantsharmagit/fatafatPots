@@ -1,0 +1,128 @@
+<!-- Made by : Prashant Sharma  | C0878710 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.png" type="image/icon type">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.highlight.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="js/contact.js"></script>
+  <title>Fatafat Pots | Contact Us</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <h1><a href="index.html">Fatafat Pots.</a></h1>
+      <nav>
+        <ul class="flex" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html" id="current-page">Contact Us</a></li>
+          <li><a href="#">More&nbsp;+</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="flickr.html">Flickr</a></li>
+                <li><a href="web1.html">Products</a></li>
+                <li><a href="web2.html">Customer Orders</a></li>
+                <li><a href="web3.html">Order Totals</a></li>
+                <li><a href="web4.html">Inventory</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="contactUs">
+    <div class="container grid">
+      <img src="img/contactUs.png">
+      <div class="contactForm card">
+        <form id="contactForm">
+          <fieldset>
+            <legend>&nbsp;&nbsp;Contact Form&nbsp;&nbsp;</legend>
+
+            <div class="form-control">
+              <label for="name">Name:&nbsp;</label>
+              <input type="text" name="name" placeholder="Please enter your name" size="20" autofocus>
+            </div>
+
+            <div class="form-control">
+              <label for="age">Age:&nbsp;</label>
+              <input type="text" name="age" placeholder="Please enter your age" size="20">
+            </div>
+
+            <div class="form-control">
+              <label for="sex">Sex:&nbsp;</label>
+              <input type="radio" name="sex" id="Male" value="Male">
+              <label for="Male">Male&nbsp;</label>
+              <input type="radio" name="sex" id="Female" value="Female">
+              <label for="Female">Female&nbsp;</label>
+              <input type="radio" name="sex" id="Other" value="Other">
+              <label for="Other">Other&nbsp;</label>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email:&nbsp;</label>
+              <input type="text" name="email" placeholder="Please enter your email" required>
+            </div>
+
+            <div class="form-control">
+              <label for="customerCheck">Are you an existing customer?&nbsp;</label>
+              <input type="checkbox" name="customerCheck" id="yes">
+              <label for="customerCheck">Yes&nbsp;</label>
+            </div>
+
+            <div class="form-control">
+              <label for="cars">Query:&nbsp;</label>
+              <select name="queryOptions">
+                <option disabled selected>-- Select your query --</option>
+                <option value="male">Complaint</option>
+                <option value="female">Feedback</option>
+                <option value="other">Request</option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <p><label for="query">Enter you query:&nbsp;</label></p>
+              <textarea name="query" cols="30" rows="5"></textarea>
+              </select>
+            </div>
+            <div class="form-control">
+              <button type="submit" class="btn">Submit</button>
+              <button type="reset" class="btn">Reset</button>
+              </select>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex">
+      <div>&copy; Copyright 2099. All Rights Reserved.</div>
+      <div><a href="mailto:fatafatpots@yopmail.com">Request Information</a></div>
+      <div>Prashant Sharma | C0878710</div>
+    </div>
+  </footer>
+</body>
+
+</html>

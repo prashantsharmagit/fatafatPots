@@ -1,0 +1,46 @@
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffcc88;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.meet-the-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.meet-the-team figure{
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.meet-the-team figure h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.meet-the-team figure img {
+  height: 200px;
+  width: 150px;
+}
+.meet-the-team figure:hover {
+  transform: translateY(-15px);
+}
+
+aside{
+  text-align: center;
+  background-color: #ffcc88;
+}

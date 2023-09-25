@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  height: 10vh;
+}
+.navbar h1 a:hover {
+  border-bottom: none;
+  color: #ffcc88;
+}
+.navbar ul {
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px #ffcc88 solid;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.dropdown {
+  display: none;
+}
+.navbar ul li:hover .dropdown {
+  display: flex;
+  position: absolute;
+  background-color: #333;
+  padding: 15px 0;
+  border-radius: 15px;
+  z-index: 999;
+}
+.navbar ul li:hover .dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+.navbar ul li:hover .dropdown ul li {
+  margin: 2px 0;
+  padding: 3px 0;
+}
+.navbar ul li:hover .dropdown ul a:hover {
+  border-bottom: none;
+  font-style: italic;
+}
+#current-page {
+  border-bottom: 2px #ffcc88 solid;
+}
+
+/* Welcome */
+.welcome {
+  height: 90vh;
+}
+.header {
+  height: 400px;
+  width: 400px;
+}
+.header img {
+  border-radius: 400px;
+}
+.welcome h1 {
+  font-size: 2.5rem;
+}
+.welcome p {
+  margin: 20px 0;
+}
+main {
+  display: block;
+}
+
+/* Specials - Product of the week */
+.productOfTheWeek h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Specials - Reason to choose us */
+.reasonsToChoose .flex {
+  flex-wrap: wrap;
+}
+.reasonsToChoose .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+.reasonsToChoose .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.reasonsToChoose .card img {
+  height: 200px;
+  width: 200px;
+}
+.reasonsToChoose .card:hover {
+  transform: translateY(-15px);
+}
+
+/* Media */
+.video {
+  padding: 1em;
+  text-align: center;
+}
+video {
+  height: auto;
+  max-width: 100%;
+}
+.sound {
+  text-align: center;
+}
+audio {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+.footer a {
+  color: #fff;
+}
+.footer .flex {
+  flex-direction: column;
+}
+
+/* Media Query - Tablet and under */
+@media screen and (max-width: 942px) {
+  .navbar {
+    height: auto;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .welcome {
+    height: 100%;
+  }
+
+  #current-page {
+    border-bottom: none;
+  }
+}
+
+/* Media Query - Mobile */
+@media screen and (max-width: 420px) {
+}

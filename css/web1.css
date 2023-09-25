@@ -1,0 +1,39 @@
+/* body {
+  margin: 0;
+  background-color: black;
+} */
+
+#container1 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: gray;
+  border-width: 5px 5px 5px 5px;
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table th {
+  background: black;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background: black;
+}

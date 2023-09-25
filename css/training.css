@@ -1,0 +1,27 @@
+table,
+th,
+td {
+    border: solid 0.1em #333;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+th {
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffcc88;
+}
+
+table tbody tr:hover {
+    background-color: rgb(85, 83, 83);
+    color: #fff;
+}
